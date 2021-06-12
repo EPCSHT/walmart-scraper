@@ -89,4 +89,4 @@ During the run, the actor stores results into a dataset. Each item is a separate
 You can manage the results in any languague (Python, PHP, Node JS/NPM). See the FAQ or <a href="https://www.apify.com/docs/api" target="blank">our API reference</a> to learn more about getting results from this Walmart actor.
 
 ## Scraped Walmart Products
-The structure of each item in Walmart products can be checked from here: https://api.apify.com/v2/datasets/nS3szYquZhG3NosVe/items?clean=true&format=json&limit=1
+The structure of each item in Walmart products can be checked from here: https://api.apify.com/v2/datasets/CHWkQNZAK5NYYLQww/items?clean=true&format=json&limit=1
