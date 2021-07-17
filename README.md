@@ -61,10 +61,10 @@ The actor optimized to run blazing fast and scrape many as product as possible. 
 ```json
 {
 	"startUrls":[
-		{"url":"https://www.walmart.com/browse/auto-tires/brake-pads/91083_1074765_9038935_4582920"},
-		{"url":"https://www.walmart.com/browse/home/"},
-		{"url":"https://www.walmart.com/search?grid=true&query=Mixed+Bouquets"},
-		{"url":"https://www.walmart.com/ip/Mainstays-Blue-Sunflower-Mix-Bouquet/155345382"}
+		"https://www.walmart.com/browse/auto-tires/brake-pads/91083_1074765_9038935_4582920",
+		"https://www.walmart.com/browse/home/",
+		"https://www.walmart.com/search?grid=true&query=Mixed+Bouquets",
+		"https://www.walmart.com/ip/Mainstays-Blue-Sunflower-Mix-Bouquet/155345382"
 	],
 	"search": "apples",
 	"endPage":6,
