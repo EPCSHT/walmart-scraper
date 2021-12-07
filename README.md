@@ -98,7 +98,7 @@ The actor optimized to run blazing fast and scrape many as product as possible. 
     "search": "apples",
     "endPage": 6,
     "maxItems": 100,
-    "outputFilterFunction": "(object) => ({...object, id: object.item.productId})"
+    "outputFilterFunction": "(object) => ({...object})"
 }
 ```
 
