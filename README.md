@@ -22,7 +22,7 @@ Don't worry when you get little bit different products than you saw in browser p
 
 ## Bugs, fixes, updates and changelog
 
-This scraper is under active development. If you have any feature requests you can create an issue from [here](https://github.com/tugkan/walmart-scraper/issues).
+This scraper is under active development. If you have any feature requests you can create an issue from [here](https://github.com/epctex/walmart-scraper/issues).
 
 ### Incoming Changes
 
@@ -73,6 +73,23 @@ If you would like to scrape only the first page of a search list or category lis
 
 With the last approach that explained above you can also fetch any interval of pages. If you provide the 5th page of a category and define the `endPage` parameter as 6 then you'll have the 5th and 6th pages only.
 
+
+### Output Filter Function
+This function is used for mapping the output data that the actor scrapes from the target. It has the following implementation:
+
+```
+data = eval(outputFilterFunction)(data);
+```
+
+So you can use this function to retrieve only the attributes you'd like to have. The following example is for retrieving only `id` and `name` attributes:
+
+```
+(object) => ({
+    id: object.id,
+    name: object.name
+})
+```
+
 ### Compute Unit Consumption
 
 The actor optimized to run blazing fast and scrape many as product as possible. Therefore, it forefronts all product detail requests. If actor doesn't block very often it'll scrape 50 products in 2 minutes with ~0.3-0.5 compute units.
@@ -118,4 +135,4 @@ You can manage the results in any languague (Python, PHP, Node JS/NPM). See the 
 
 ## Scraped Walmart Products
 
-The structure of each item in Walmart products can be checked from here: https://api.apify.com/v2/datasets/CHWkQNZAK5NYYLQww/items?clean=true&format=json&limit=1
+The structure of each item in Walmart products can be checked from here: https://api.apify.com/v2/datasets/P0AletlJ3uq9WbRoY/items?clean=true&format=json&limit=1
