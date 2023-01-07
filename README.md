@@ -135,4 +135,4 @@ You can manage the results in any languague (Python, PHP, Node JS/NPM). See the 
 
 ## Scraped Walmart Products
 
-The structure of each item in Walmart products can be checked from here: https://api.apify.com/v2/datasets/P0AletlJ3uq9WbRoY/items?clean=true&format=json&limit=1
+The structure of each item in Walmart products can be checked from here: https://api.apify.com/v2/datasets/3Nk7RZP8vheqazCtb/items?clean=true&format=json
