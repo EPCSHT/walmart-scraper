@@ -49,21 +49,25 @@ You can check the output of this video [here](https://api.apify.com/v2/datasets/
 
 ## Input Parameters
 
-The input of this scraper should be JSON containing the list of pages on Walmart that should be visited. Required fields are:
+The input of this scraper should be JSON containing the list of pages on Walmart that should be visited. Possible fields are:
 
-| Field                | Type    | Description                                                                                                                       |
-| -------------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| startUrls            | Array   | (optional) List of Walmart URLs. You should only provide category detail, product detail or search URLs                           |
-| maxItems             | Integer | (optional) You can limit scraped products. This should be useful when you search through the big subcategories.                   |
-| endPage              | Integer | (optional) Final number of page that you want to scrape. Default is `Infinite`. This is applies to all list request individually. |
-| search               | String  | (optional) Keyword that can be searched in Walmart search engine.                                                                 |
-| proxy                | Object  | Proxy configuration                                                                                                               |
-| extendOutputFunction | String  | (optional) Function that takes a JQuery handle ($) as argument and returns object with data                                       |
-| outputFilterFunction | String  | (optional) Function that takes an output item as argument and returns the mapped data                                             |
+- `search`: (Optional) (String) Keyword that can be searched in Walmart search engine.
+
+- `startUrls`: (Optional) (Array) List of Walmart URLs. You should only provide category detail, product detail or search URLs.
+
+- `endPage`: (Optional) (Number) Final number of page that you want to scrape. Default is `Infinite`. This is applies to all `search` request and `startUrls` individually.
+
+- `maxItems`: (Optional) (Number) You can limit scraped items. This should be useful when you search through the big lists or search results.
+
+- `proxy`: (Required) (Proxy Object) Proxy configuration.
+
+- `extendOutputFunction`: (Optional) (String) Function that takes a JQuery handle ($) as argument and returns object with data.
+
+- `outputFilterFunction`: (Optional) (String) Function that takes an output item as argument and returns the mapped data.
 
 This solution requires the use of **Proxy servers**, either your own proxy servers or you can use <a href="https://www.apify.com/docs/proxy">Apify Proxy</a>.
 
-##### Tip
+### Tip
 
 Please keep in mind that for the sake of not to lose any of the data the actor returns all the possible output. That's it's suggested to use `outputFilterFunction` all the time.
 
