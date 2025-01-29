@@ -156,4 +156,4 @@ You can manage the results in any language (Python, PHP, Node JS/NPM). See the F
 The structure of each item in Walmart products can be checked from here: https://api.apify.com/v2/datasets/3Nk7RZP8vheqazCtb/items?clean=true&format=json
 
 ## Contact
-Please visit us through [epctex.com](https://epctex.com) to see all the products that are available for you. If you are looking for any custom integration or so, please reach out to us through the chat box in [epctex.com](https://epctex.com). In need of support? [devops@epctex.com](mailto:devops@epctex.com) is at your service.
+Please visit us through [epctex.com](https://epctex.com) to see all the products that are available for you. If you are looking for any custom integration or so, please reach out to us through the chat box in [epctex.com](https://epctex.com). In need of support? [business@epctex.com](mailto:business@epctex.com) is at your service.
